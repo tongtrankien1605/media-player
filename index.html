@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player by Tống Trần Kiên</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+</head>
+<body>
+    <canvas id="sparkleCanvas"></canvas>
+    <div class="container">
+        <h1>Media Player by Tống Trần Kiên</h1>
+        <div class="input-section">
+            <div class="input-wrapper">
+                <input type="text" id="mediaLink" placeholder="Dán URL tại đây">
+                <button class="clear-btn" onclick="clearInput()">✖</button>
+            </div>
+            <button class="action-btn paste-btn" onclick="pasteFromClipboard()">Dán từ Clipboard</button>
+            <button class="action-btn play-btn" onclick="playMedia()">Phát</button>
+        </div>
+        <div id="player"></div>
+        <p class="note">Hỗ trợ: YouTube (video, playlist, live, embed), Vimeo, SoundCloud, Dailymotion, Twitch, Spotify, Mixcloud, Instagram Reels, TikTok, Facebook, MP4, MP3, HLS. Instagram, TikTok, Facebook cần link embed hoặc URL hợp lệ. Nghe nhạc khi tắt màn hình trên trình duyệt hỗ trợ! - by Tống Trần Kiên</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+</body>
+</html>
